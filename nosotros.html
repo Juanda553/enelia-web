@@ -96,33 +96,41 @@
 <body style="background-color: #fef8f1;">
 
     <header>
-        <div id="header-top" style="background-color: #a55f83; position: relative; padding: 20px;" class="p-3 mb-3 text-center">
-            <div class="d-flex align-items-center justify-content-center gap-3 position-relative flex-wrap">
-                <img src="assets/img/papel_picado.webp" style="max-width: 28%; position: absolute; left: 0; transform: translateY(16%);" alt="">
+        <div id="header-top" style="background-color: #a55f83; padding: 20px;" class="text-center">
+            <div class="d-flex align-items-center justify-content-center gap-3 flex-wrap position-relative">
+                <img src="assets/img/papel_picado.webp" class="d-none d-md-block" style="max-width: 28%; position: absolute; left: 0; transform: translateY(16%);" alt="">
                 <h1 style="color: white; font-family: 'Quicksand', sans-serif; margin: 0;">ANELIA CO</h1>
-                <img src="assets/img/papel_picado_2.webp" style="max-width: 28%; position: absolute; right: 0; transform: translateY(16%);" alt="">
+                <img src="assets/img/papel_picado_2.webp" class="d-none d-md-block" style="max-width: 28%; position: absolute; right: 0; transform: translateY(16%);" alt="">
             </div>
         </div>
-        
-        <div id="header-nav" style="background-color: #fecde9; border-radius: 100px; padding: 10px 20px; width: fit-content; margin: 0 auto;" class="p-3">
-            <ul class="nav justify-content-center flex-wrap">
-                <li class="nav-item">
-                    <a class="nav-link" style="color: black; font-size: 24px; font-family: 'Quicksand', sans-serif;" href="index.html">Inicio</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" style="color: black; font-size: 24px; font-family: 'Quicksand', sans-serif;" href="productos.html">Productos</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link active" style="color: black; font-size: 24px; font-family: 'Quicksand', sans-serif;" href="nosotros.html">Sobre Nosotros</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" style="color: black; font-size: 24px; font-family: 'Quicksand', sans-serif;" href="#">Reseñas</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" style="color: black; font-size: 24px; font-family: 'Quicksand', sans-serif;" href="cuenta.html">Cuenta</a>
-                </li>
-            </ul>
-        </div>
+    
+        <nav class="navbar navbar-expand-md mt-3" style="background-color: #fecde9; border-radius: 100px; padding: 10px 50px; width: fit-content; margin: 0 auto;">
+            <div class="container-fluid justify-content-center">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menuNav" aria-controls="menuNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+    
+                <div class="collapse navbar-collapse justify-content-center" id="menuNav">
+                    <ul class="navbar-nav flex-wrap">
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html" style="color: black; font-size: 24px; font-family: 'Quicksand', sans-serif;">Inicio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="productos.html" style="color: black; font-size: 24px; font-family: 'Quicksand', sans-serif;">Productos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" href="nosotros.html" style="color: black; font-size: 24px; font-family: 'Quicksand', sans-serif;">Sobre Nosotros</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#" style="color: black; font-size: 24px; font-family: 'Quicksand', sans-serif;">Reseñas</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="cuenta.html" style="color: black; font-size: 24px; font-family: 'Quicksand', sans-serif;">Cuenta</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
     </header>
 
     <main>
