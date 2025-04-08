@@ -28,14 +28,20 @@
         }
 
         .fondo-esquina {
-            position: fixed;
-            bottom: 32px;
             width: 150px;
             z-index: -1;
+            /* Ya no usamos position: fixed */
         }
 
-        .fondo-izquierda { left: 0; }
-        .fondo-derecha { right: 0; transform: scaleX(-1); }
+        .fondo-izquierda {
+            float: left;
+            transform: none;
+        }
+
+        .fondo-derecha {
+            float: right;
+            transform: scaleX(-1);
+        }
 
         #buscar::placeholder {
             color: white;
@@ -48,7 +54,8 @@
             }
 
             #header-top img {
-                max-width: 25%;
+                display: block !important;
+                transform: translateY(-72%) !important;
             }
 
             #header-nav {
@@ -143,7 +150,7 @@
                             <span class="fw-bold display-4 text-uppercase" style="color: #a45d83; font-family: 'Courgette', cursive; font-size: 100px;">Buen</span>
                             <span class="fw-bold display-4 text-uppercase" style="color: #bb3e81; font-family: 'Courgette', cursive; font-size: 100px;">Provecho</span>
                         </div>
-                        <a href="productos.html" class="btn btn-rosa mt-3" style="font-size: 25px; font-family: 'Courgette', cursive; width: 35%; border-radius: 64px;">Comprar Ahora</a>
+                        <a href="productos.html" class="btn btn-rosa mt-3" style="font-size: 20px; font-family: 'Courgette', cursive; width: 35%; border-radius: 64px;">Comprar Ahora</a>
                     </div>
 
                     <div class="col-md-6">
@@ -165,6 +172,9 @@
                 </div>
             </div>
         </section>
+        
+        <img src="assets/img/flor.webp" class="fondo-esquina fondo-izquierda">
+        <img src="assets/img/flor.webp" class="fondo-esquina fondo-derecha">
 
         <div class="container text-center mb-5">
             <input type="text" name="buscar" id="buscar" class="form-control mx-auto text-center" style="background-color: #a55f83; width: 38%; color: white;" placeholder="© 2025, Anelia Co. | Buscar">
@@ -173,9 +183,6 @@
                 <a style="color: black; font-size: 28px; margin: 0 10px;" href="#"><i class="bi bi-instagram"></i></a>
             </div>
         </div>
-
-        <img src="assets/img/flor.webp" class="fondo-esquina fondo-izquierda">
-        <img src="assets/img/flor.webp" class="fondo-esquina fondo-derecha">
     </main>
 
     <footer class="p-5" style="background-color: #a55f83;">
